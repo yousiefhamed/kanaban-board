@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="kanban-board">
+    <div id="todo" class="column">
+      <h2>To-Do</h2>
+      <div class="tasks" id="todo-column"></div>
+      <button class="add-task" data-column="todo">Add Task</button>
+    </div>
+    <div id="inprogress" class="column">
+      <h2>In Progress</h2>
+      <div class="tasks" id="inprogress-column"></div>
+      <button class="add-task" data-column="inprogress">Add Task</button>
+    </div>
+    <div id="done" class="column">
+      <h2>Done</h2>
+      <div class="tasks" id="done-column"></div>
+      <button class="add-task" data-column="done">Add Task</button>
+    </div>
+  </div>
+
+  <script src="https://kit.fontawesome.com/2a0854ee71.js" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>

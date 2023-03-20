@@ -1,0 +1,83 @@
+.kanban-board {
+  display: flex;
+  justify-content: space-between;
+  background-color: #e8f5e9;
+}
+
+.column {
+  flex: 1;
+  margin: 10px;
+  padding: 10px;
+  background-color: #dcedc8;
+  border-radius: 5px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #2e7d32;
+}
+
+.tasks {
+  min-height: 100px;
+  padding: 10px;
+  background-color: #f1f8e9;
+  border-radius: 5px;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #c5e1a5;
+  border-radius: 5px;
+}
+
+.task input[type="text"] {
+  line-height: 30px;
+  width: calc(100% - 60px);
+  border: none;
+  background-color: transparent;
+}
+
+.tasks .actions {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.task .fas {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.add-task {
+  display: block;
+  margin: 10px 0;
+  padding: 5px;
+  background-color: #2e7d32;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.drag-over {
+  background-color: #a5d6a7 !important;
+}
+
+@media screen and (max-width: 800px) {
+  .kanban-board {
+    flex-wrap: wrap;
+  }
+  .column {
+    flex-basis: 100vw;
+  }
+}
