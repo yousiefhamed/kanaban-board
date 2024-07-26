@@ -1,7 +1,15 @@
+body {
+  background-color: #e8f5e9;
+}
+
+h1 {
+  text-align: center;
+  color: #2e7d32;
+}
+
 .kanban-board {
   display: flex;
   justify-content: space-between;
-  background-color: #e8f5e9;
 }
 
 .column {
@@ -10,6 +18,7 @@
   padding: 10px;
   background-color: #dcedc8;
   border-radius: 5px;
+  box-shadow: 4px 4px 4px #0000002e;
 }
 
 h2 {
